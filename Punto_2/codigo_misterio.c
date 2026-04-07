@@ -1,33 +1,33 @@
 #include <stdio.h>
 
-void f_alpha(int *p) {
-    int temp = *p;
-    int rev = 0;
-    while (temp > 0) {
-        rev = (rev * 10) + (temp % 10);
-        temp = temp / 10;
+void Dividir_en_cifras(int *pEntrada) {
+    int numero_a_dividir_en_cifras = *pEntrada;
+    int nroIteracion = 0;
+    while (numero_a_separar_en_cifras > 0) {
+        nroIteracion = (nroIteracion * 10) + (numero_a_dividir_en_cifras % 10);
+        numero_a_dividir_en_cifras = numero_a_dividir_en_cifras / 10;
     }
-    *p = rev;
+    *pEntrada = nroIteracion;
 }
 
-void f_beta(int *p) {
-    *p = *p / 2;
+void Division_entera_entre_2(int *pEntrada) {
+    *pEntrada = *pEntrada / 2;
 }
 
-void f_gamma(int *p) {
-    int temp = *p;
+void SumarCifras(int *pEntrada) {
+    int numero_a_sumar_cifras = *pEntrada;
     int suma = 0;
-    while (temp > 0) {
-        suma = suma + (temp % 10);
-        temp = temp / 10;
+    while (n > 0) {
+        suma = suma + (numero_a_sumar_cifras % 10);
+        numero_a_sumar_cifras = numero_a_sumar_cifras / 10;
     }
-    *p = *p + suma;
+    *pEntrada = *pEntrada + suma;
 }
 
-void procesar_enigma(int *valor_referencia) {
-    f_alpha(valor_referencia);
-    f_beta(valor_referencia);
-    f_gamma(valor_referencia);
+void Dividir_en_cifras_(int *valor_referencia) {
+    Dividir_en_cifras(valor_referencia);
+    Division_entera_entre_2(valor_referencia);
+    SumarCifras(valor_referencia);
 }
 
 int main() {

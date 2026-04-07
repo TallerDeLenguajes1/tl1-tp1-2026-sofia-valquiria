@@ -14,3 +14,6 @@ ignorado.txt
 
 # [etcétera]
 ```
+* Paso 2: ...?
+
+* Paso 3: Profit
